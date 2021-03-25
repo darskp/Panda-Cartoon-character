@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0%;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Dela Gothic One',
+                cursive;
+        }
+
+        html {
+            font-size: 65.2%;
+            height: 100%;
+        }
+
+        :root {
+            --bg-color: #1289A7;
+            --box-shadow: 1.0rem 1.0rem 2.0rem -0.9rem rgba(0, 0, 0, 0.39);
+        }
+
+        .main-div {
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-color);
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+        }
+
+        .main-div .center-div {
+            width: 40rem;
+            height: 40rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .main-div .center-div .panda-face {
+            width: 30rem;
+            height: 28rem;
+            border: 1rem solid black;
+            position: relative;
+            border-radius: 50%;
+            -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+            background-color: #f1f1f1;
+        }
+
+        .main-div .center-div .panda-face::before {
+            content: " ";
+            width: 13rem;
+            height: 13rem;
+            position: absolute;
+            background-color: transparent;
+            border: 3.4rem solid black;
+            top: -4.8rem;
+            left: -7.1rem;
+            -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .main-div .center-div .panda-face::after {
+            content: " ";
+            width: 13rem;
+            height: 13rem;
+            position: absolute;
+            background-color: transparent;
+            border: 3.4rem solid black;
+            top: -4.8rem;
+            right: -7.1rem;
+            -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .main-div .center-div .panda-face .panda-eye1 {
+            width: 8rem;
+            height: 10rem;
+            left: 4rem;
+            top: 5rem;
+            position: relative;
+            -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+            border-radius: 4rem;
+            border: 2.3rem solid black;
+            background-color: transparent;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .main-div .center-div .panda-face .panda-eye1::before {
+            content: "";
+            width: 2.5rem;
+            position: absolute;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: #030303;
+        }
+
+        .main-div .center-div .panda-face .panda-eye1::after {
+            content: "";
+            width: 0.7rem;
+            height: 0.7rem;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .main-div .center-div .panda-face .panda-eye2 {
+            width: 8rem;
+            height: 10rem;
+            left: 16rem;
+            top: -5rem;
+            position: relative;
+            -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+            border-radius: 4rem;
+            border: 2rem solid black;
+            background-color: transparent;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .main-div .center-div .panda-face .panda-eye2::before {
+            content: "";
+            border-radius: 50%;
+            background-color: #030303;
+            content: "";
+            width: 2.5rem;
+            height: 4rem;
+            position: absolute;
+        }
+
+        .main-div .center-div .panda-face .panda-eye2::after {
+            content: "";
+            width: 0.7rem;
+            height: 0.7rem;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .main-div .center-div .panda-face .panda-mouth {
+            width: 4rem;
+            height: 5rem;
+            bottom: 1rem;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            background-color: black;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        /*# sourceMappingURL=var.css.map */
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="center-div">
+            <div class="panda-face">
+                <div class="panda-eye1">
+                </div>
+                <div class="panda-eye2">
+                </div>
+                <div class="panda-mouth">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
